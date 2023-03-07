@@ -1,0 +1,22 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+main .container-left{
+  height: 100vh;
+  width: 20%;
+  background-color: brown;
+  max-width: 250px;
+}
+
+
