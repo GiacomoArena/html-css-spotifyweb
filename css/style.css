@@ -53,7 +53,11 @@ a{
 }
 .left-container{
   flex-direction: column;
-  padding: 15px 20px;
+  margin: 15px 20px;
+}
+.left-btn{
+  cursor:pointer;
+  position: relative;
 }
 .logo{
   width: 150px;
@@ -61,15 +65,47 @@ a{
 }
 .icons{
   flex-direction: column;
+  padding-top: 25px;
 }
 .icons img{
   width: 30px;
+  margin-top: 10px;
+}
+.icons aside{
+  position: absolute;
+  left: -22px;
+  top: 0px;
+  font-size: 38px;
+  display: none;
+  
 }
 .icons span{
+  position: absolute;
+  left: 25%;
+  bottom: 25%;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--grigio);
+}
+.icons .left-btn:hover aside{
+  color:var(--verde);
+  display: block;
+}
+.icons .left-btn:hover span{
+  color: white;
 }
 
 .playlist ul{
-  /* overflow:scroll; */
+  overflow-y:auto;
+}
+.bottom-info{
+  height: 100%;
+  justify-content: flex-end;
+  flex-direction: column;
+  bottom: 0;
+}
+.bottom-info div img{
+  width: 10px;
 }
 
 
@@ -81,7 +117,7 @@ a{
   right: 0;
   width: calc(100% - 250px);
   height: 80px;
-  background-color: #080b1295;
+  background-color: #080b12c8;
   justify-content: flex-end;
   align-items: center;
 }
@@ -113,11 +149,12 @@ a{
 .hover-card{
   background-color: rgba(0, 0, 0, 0.801);
   width: calc(100% - 20px);
-  height: calc(100% - 20% - 15px);
+  height: calc(100% - 25% - 15px);
   position: absolute;
   top: 10px;
   opacity: 0;
 }
+
 .hover-card i{
   font-size: 3rem;
   position: absolute;
@@ -157,7 +194,7 @@ a{
 }
 .col img {
   width: 100%;
-  height: calc(100% - 20%);
+  height: calc(100% - 25%);
 }
 .col h3{
 font-size: 1rem;
@@ -169,16 +206,46 @@ margin-bottom: 5px;
   color: var(--grigio);
   font-weight: 600;
 }
-
-
 .margin{
   margin-top: 70px;
+}
+.description{
+  margin-left: 15px;
+}
+.description h2{
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.description p{
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--grigio);
+
 }
 .artisti{
   margin-bottom: 150px;
 }
-.description h2{
-  margin-bottom: 20px;
+.artisti .row .col img{
+  border-radius: 50%;
+}
+.hover-card-circle{
+  background-color: rgba(0, 0, 0, 0.801);
+  width: calc(100% - 20px);
+  height: calc(100% - 25% - 15px);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  opacity: 0;
+}
+.hover-card-circle i{
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hover-card-circle:hover{
+  opacity: 1;
 }
 
 
