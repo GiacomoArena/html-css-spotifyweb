@@ -5,6 +5,10 @@
 }
 
 /* GENERAL */
+body{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
 :root{
   --grigio: #7B7E82;
   --verde: #ADFF2F;
@@ -24,7 +28,11 @@
 }
 .col{
   width: calc(100% / 6);
+  text-align: center;
+
   padding: 10px;
+  cursor: pointer;
+  position: relative;
 }
 a{
   text-decoration: none;
@@ -33,6 +41,7 @@ a{
 /* MAIN */
 
 .main-wrapper{
+  background-color: #141922;
   width: 100%;
   height: 100vh;
 }
@@ -40,7 +49,7 @@ a{
   float: left;     
   width: 250px;
   height: calc(100% - 90px);
-  background-color: brown;
+  background-color: black;
 }
 .left-container{
   flex-direction: column;
@@ -72,7 +81,7 @@ a{
   right: 0;
   width: calc(100% - 250px);
   height: 80px;
-  background-color: #f080f0;
+  background-color: #080b1295;
   justify-content: flex-end;
   align-items: center;
 }
@@ -82,7 +91,28 @@ a{
   overflow-y: auto;
   padding-top: 80px;
 }
-
+.testo{
+  height: 30px;
+  
+}
+.hover-card{
+  background-color: rgba(0, 0, 0, 0.801);
+  width: calc(100% - 20px);
+  height: calc(100% - 20% - 15px);
+  position: absolute;
+  top: 10px;
+  opacity: 0;
+}
+.hover-card i{
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hover-card:hover{
+  opacity: 1;
+}
 .nav-bar{
   width: 100%;
   height: 80px;
@@ -95,12 +125,21 @@ a{
 }
 .col img {
   width: 100%;
+  height: calc(100% - 20%);
+}
+.col span{
+  font-size: 12px;
 }
 
-.creato-per{
+.margin{
+  margin-top: 50px;
+}
+.artisti{
   margin-bottom: 150px;
 }
-
+.description h2{
+  margin-bottom: 20px;
+}
 
 
 /* FOOTER */
@@ -112,7 +151,7 @@ footer #bottom-bar{
   bottom: 0;
   width: 100%;
   height: 90px;
-  background-color: cadetblue;
+  background-color: #282828;
 }
 
 
@@ -124,9 +163,12 @@ footer #bottom-bar{
   }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
   #left-bar{
     width: 80px;
+  }
+  #top-bar{
+    width: calc(100% - 80px);
   }
   #big-container{
     width: calc(100% - 80px);

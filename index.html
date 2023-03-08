@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
 
@@ -19,45 +22,44 @@
   <main>
     <div class="main-wrapper d-flex">
       <section id="left-bar" class="d-flex">
-      <div class="left-container d-flex">
+        <div class="left-container d-flex">
+          <div class="logo">
+          <img src="img/logo.svg" alt="">
+          </div>
+          <!--###### ICONS#### -->
+          <div class="icons d-flex">
+            <div>
+              <img src="img/home.svg" alt="home">
+              <span>Home</span>
+            </div>
+            <div>
+              <img src="img/search.svg" alt="search">
+              <span>cerca</span>
+            </div>
+            <div>
+              <img src="img/libreria.svg" alt="libreria">
+              <span>La tua libreria</span>
+            </div>
+            <!-- #####ICONS##### -->
+          </div>
 
-        <div class="logo">
-        <img src="img/logo.svg" alt="">
-        </div>
-        <!--###### ICONS#### -->
-        <div class="icons d-flex">
-          <div>
-            <img src="img/home.svg" alt="home">
-            <span>Home</span>
+          <div class="playlist">
+            <div class="crea-playlist">
+              <i class="fa-solid fa-plus"></i>
+              <span>Crea playlist</span>
+            </div>
+            <ul>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+            </ul>
           </div>
-          <div>
-            <img src="img/search.svg" alt="search">
-            <span>cerca</span>
-          </div>
-          <div>
-            <img src="img/libreria.svg" alt="libreria">
-            <span>La tua libreria</span>
-          </div>
-          <!-- #####ICONS##### -->
-        </div>
 
-        <div class="playlist">
-          <div class="crea-playlist">
-            <i class="fa-solid fa-plus"></i>
-            <span>Crea playlist</span>
-          </div>
-          <ul>
-            <li><a href="#">Nome playlist</a></li>
-            <li><a href="#">Nome playlist</a></li>
-            <li><a href="#">Nome playlist</a></li>
-            <li><a href="#">Nome playlist</a></li>
-            <li><a href="#">Nome playlist</a></li>
-            <li><a href="#">Nome playlist</a></li>
-            <li><a href="#">Nome playlist</a></li>
-          </ul>
         </div>
-
-      </div>
       </section>
     
       <section id="top-bar" class="d-flex">
@@ -79,75 +81,114 @@
           </div>
         </div>
 
-
-        <div class="recently-played">
-          <div>
+        <div class="recently-played margin">
+          <div class="description">
             <h2>
               Recently played
             </h2>
           </div>
           <div class="row ">
+            <!-- prova -->
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
+              <h3>Heavy Metal</h3>
+              <span>Subtitle</span>
+            </div>
+            <!-- provaa -->
+            <div class="col">
+              <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
               <h3>Heavy Metal</h3>
               <span>Subtitle</span>
             </div>
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
               <h3>Heavy Metal</h3>
               <span>Subtitle</span>
             </div>
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
               <h3>Heavy Metal</h3>
               <span>Subtitle</span>
             </div>
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
               <h3>Heavy Metal</h3>
               <span>Subtitle</span>
             </div>
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="metallica">
-              <h3>Heavy Metal</h3>
-              <span>Subtitle</span>
-            </div>
-            <div class="col">
-              <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
               <h3>Heavy Metal</h3>
               <span>Subtitle</span>
             </div>
           </div>
         </div>
 
-        <div class="crerato-per">
-          <h2>Creato per John Doe</h2>
-          <span>più ascolti, più accurati saranno i suggerimenti</span>
+        <div class="creato-per margin">
+          <div class="description">
+            <h2>Creato per John Doe</h2>
+          <span>
+            più ascolti, più accurati saranno i suggerimenti
+          </span>
+          </div>
+          
           <div class="row ">
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
               <h3>Heavy Metal</h3>
               <span>Subtitle</span>
             </div>
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="metallica">
+              <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
               <h3>Heavy Metal</h3>
               <span>Subtitle</span>
             </div>
           </div>
-          <div class="creato-per">
-            <h2>Artisti più popolari</h2>
-            <span>
-              più ascolti, più accurati saranno i suggerimenti
-            </span>
+          <div class="artisti margin">
+            <div class="description">
+              <h2>Artisti più popolari</h2>
+              <span>
+                più ascolti, più accurati saranno i suggerimenti
+              </span>
+            </div>
+            
             <div class="row ">
               <div class="col">
                 <img src="img/metal_lifting.jpg" alt="metallica">
+                <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
                 <h3>Heavy Metal</h3>
                 <span>Subtitle</span>
               </div>
               <div class="col">
                 <img src="img/metal_lifting.jpg" alt="metallica">
+                <div class="hover-card">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
                 <h3>Heavy Metal</h3>
                 <span>Subtitle</span>
               </div>
