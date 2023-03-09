@@ -329,9 +329,7 @@ footer #bottom-bar{
 .riproduzione,.volume{
   width: calc(100% /3);
 }
-.player{
-  width: calc(100% / 1.5);
-}
+
 .riproduzione{
   /* flex-wrap: wrap; */
 }
@@ -357,9 +355,77 @@ footer #bottom-bar{
   margin-left: 35px;
   color: var(--grigio);
 }
-.fa-folder{
-  padding-left: 10px;
+.fa-heart{
+  padding-right: 10px;
 }
+.player{
+  cursor: pointer;
+  width: calc(100% / 1.5);
+  flex-direction: column;
+  
+}
+.player-btn{
+  margin-bottom: 5px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+.player-btn i{
+  font-size: 1.2rem;
+  margin: 0px 10px;
+}
+.player-btn i:hover{
+  font-size: 1.5rem;
+}
+.player-btn .fa-circle-play{
+  font-size: 2rem;
+}
+.player-btn .fa-circle-play:hover{
+  font-size: 2.5rem;
+}
+.minutaggio{
+  justify-content: center;
+  align-items: center;
+  
+}
+.a{
+  flex-direction: row;
+}
+.barra-w{
+  position: relative;
+  max-width: 150px;
+  width: 15%;
+  border-bottom: 3px solid white;
+}
+.circle{
+  display: none;
+  position: absolute;
+  bottom:-11px;
+  right: 0;
+}
+
+.minutaggio:hover .barra-w{
+  border-bottom: 3px solid var(--verde);
+}
+.minutaggio:hover .circle{
+  display: block;
+}
+.barra{
+  max-width: 350px;
+  width: 40%;
+  border-bottom: 3px solid var(--grigio);
+}
+.b-radius{
+  border-bottom-right-radius:2px;
+  border-bottom-left-radius: 2px ;
+}
+.minuto{
+  margin: 0px 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 
 
 
