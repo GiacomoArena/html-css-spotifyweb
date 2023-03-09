@@ -53,19 +53,20 @@ a{
 }
 .left-container{
   flex-direction: column;
-  margin: 15px 20px;
+  margin: 15px 10px 0 15px;
 }
 .left-btn{
   cursor:pointer;
   position: relative;
 }
 .logo{
+  cursor: pointer;
   width: 150px;
   color: rgb(255, 255, 255);
 }
 .icons{
   flex-direction: column;
-  padding-top: 25px;
+  padding-top:15px;
 }
 .icons img{
   width: 30px;
@@ -73,7 +74,7 @@ a{
 }
 .icons aside{
   position: absolute;
-  left: -22px;
+  left: -17px;
   top: 0px;
   font-size: 38px;
   display: none;
@@ -89,26 +90,87 @@ a{
 }
 .icons .left-btn:hover aside{
   color:var(--verde);
-  display: block;
+  display: inline-block;
 }
 .icons .left-btn:hover span{
   color: white;
 }
-
+.playlist h2{
+  text-transform: uppercase;
+  margin: 25px 0px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  
+}
+.crea-playlist span{
+  cursor: pointer;
+  padding-left: 10px;
+  color: var(--grigio);
+  font-weight: 700;
+  font-size: 16px;
+}
+.crea-playlist span:hover{
+  color: white;
+}
+.crea-playlist i{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-size: 1.6rem;
+  color: rgb(0, 0, 0);
+  background-color: var(--grigio);
+  cursor: pointer;
+}
 .playlist ul{
-  overflow-y:auto;
+  max-height: 220px;
+  overflow: auto;
+  margin-top: 10px;
+}
+.playlist ul li{
+  line-height: 35px;
+}
+.playlist ul li a{
+  color: var(--grigio);
+  font-weight: 600;
+}
+.playlist ul li a:hover{
+  color: white;
 }
 .bottom-info{
+  position: sticky;
+  cursor: pointer;
   height: 100%;
   justify-content: flex-end;
   flex-direction: column;
-  bottom: 0;
 }
-.bottom-info div img{
-  width: 10px;
+.bottom-info .installa-app{
+  border-bottom: 1px solid var(--grigio);
+  padding: 5px 0px;
+  padding-right: 90px;
+  color: var(--grigio);
+  font-weight: 600;
 }
-
-
+.bottom-info .installa-app:hover{
+  color: white;
+}
+.bottom-info .installa-app img{
+  width: 20px;
+  vertical-align: middle;
+}
+.bottom-info .john{
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+.bottom-info .john img{
+  width: 25px;
+  background-color: var(--grigio);
+  border-radius: 50%;
+  vertical-align: middle;
+}
 
 #top-bar{
   position: fixed;
@@ -185,7 +247,7 @@ a{
   margin-top: -10px;
   opacity: 0;
 }
-.nav-bar .row a:hover h5{
+.nav-bar .row a:active h5{
   color: var(--verde);
   opacity: 1;
 }
