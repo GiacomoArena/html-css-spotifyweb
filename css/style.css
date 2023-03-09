@@ -425,8 +425,23 @@ footer #bottom-bar{
   font-size: 12px;
   font-weight: 600;
 }
-
-
+.volume{
+  justify-content: flex-end;
+  align-items: center;
+}
+.volume span i{
+  margin: 0px 5px;
+}
+.barra-vol-w{
+  margin-left: 10px;
+  width: 8%;
+  border-bottom: 3px solid white;
+}
+.barra-vol{
+  margin-right: 10px;
+  width: 18%;
+  border-bottom: 3px solid var(--grigio);
+}
 
 
 
