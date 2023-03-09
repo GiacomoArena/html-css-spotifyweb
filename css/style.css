@@ -64,6 +64,9 @@ a{
   width: 150px;
   color: rgb(255, 255, 255);
 }
+#logo-small{
+  display: none;
+}
 .icons{
   flex-direction: column;
   padding-top:15px;
@@ -124,8 +127,8 @@ a{
   cursor: pointer;
 }
 .playlist ul{
-  max-height: 220px;
-  overflow: auto;
+  height: 200px;
+  overflow-y: auto;
   margin-top: 10px;
 }
 .playlist ul li{
@@ -138,8 +141,11 @@ a{
 .playlist ul li a:hover{
   color: white;
 }
+.overflow{
+  overflow-y: auto;
+}
 .bottom-info{
-  position: sticky;
+  z-index: 33;
   cursor: pointer;
   height: 100%;
   justify-content: flex-end;
@@ -348,6 +354,32 @@ footer #bottom-bar{
   }
 }
 @media screen and (max-width:768px) {
+  .logo img{
+    display: none;
+  } 
+  #logo-small{
+    display: block;
+    filter: brightness(100);
+    width: 40px;
+  }
+  .left-btn span{
+    display: none;
+  }
+  .playlist{
+    display: none;
+  }
+  .bottom-info .installa-app{
+    border-bottom:0px;
+    padding-left: 12px;
+  }
+  .bottom-info .john{
+    width: 30px;
+    padding-left: 10px;
+  }
+  .installa-app span,
+  .john span{
+    display: none;
+  }
   #left-bar{
     width: 80px;
   }
@@ -368,6 +400,7 @@ footer #bottom-bar{
   .col span{
     font-size: 10px;
   }
+}
   @media screen and (max-width:578px){
     .col h3{
       font-size: 0.8rem;
