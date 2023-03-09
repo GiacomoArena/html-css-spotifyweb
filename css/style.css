@@ -459,11 +459,14 @@ footer #bottom-bar{
   border-bottom: 3px solid var(--grigio);
 }
 .circle-vol{
+  display: none;
   position: absolute;
   bottom: -11px;
   right: -17px;
 }
-
+.barra-vol-w:hover .circle-vol{
+  display: block;
+}
 
 
 
