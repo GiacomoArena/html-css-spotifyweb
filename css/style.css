@@ -336,6 +336,7 @@ footer #bottom-bar{
 .riproduzione .album img{
   width: 50px;
   margin-left: 10px;
+  cursor: pointer;
 }
 .nome-album{
   flex-direction: column;
@@ -349,7 +350,11 @@ footer #bottom-bar{
   color: var(--grigio);
   font-weight: 700;
 }
+.nome-album span:hover{
+  color: white;
+}
 .action{
+  cursor: pointer;
   flex-wrap: wrap;
   align-items: center;
   margin-left: 35px;
@@ -357,6 +362,12 @@ footer #bottom-bar{
 }
 .fa-heart{
   padding-right: 10px;
+}
+.fa-heart:hover{
+  color: white;
+}
+.fa-folder:hover{
+  color: white;
 }
 .player{
   cursor: pointer;
@@ -426,6 +437,7 @@ footer #bottom-bar{
   font-weight: 600;
 }
 .volume{
+  cursor: pointer;
   justify-content: flex-end;
   align-items: center;
 }
@@ -433,14 +445,23 @@ footer #bottom-bar{
   margin: 0px 5px;
 }
 .barra-vol-w{
+  position: relative;
   margin-left: 10px;
   width: 8%;
   border-bottom: 3px solid white;
+}
+.barra-vol-w:hover {
+  border-bottom: 3px solid var(--verde);
 }
 .barra-vol{
   margin-right: 10px;
   width: 18%;
   border-bottom: 3px solid var(--grigio);
+}
+.circle-vol{
+  position: absolute;
+  bottom: -11px;
+  right: -17px;
 }
 
 
